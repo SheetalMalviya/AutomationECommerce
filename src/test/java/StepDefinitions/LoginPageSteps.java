@@ -7,16 +7,18 @@ import org.Factory.DriverFactories;
 import org.WebPages.LoginWebPage;
 import org.testng.Assert;
 
+import static org.Factory.DriverFactories.get_driver;
+
 
 public class LoginPageSteps {
 
 
-    private LoginWebPage loginWebPage = new LoginWebPage(DriverFactories.get_driver());
+    private LoginWebPage loginWebPage = new LoginWebPage(get_driver());
 
     @Given("User is on Login Page")
     public void user_is_on_login_page() {
 
-c        DriverFactories.get_driver().get("http://www.automationpractice.pl/index.php?controller=authentication&back=my-account");
+      DriverFactories.get_driver().get("http://www.automationpractice.pl/index.php?controller=authentication&back=my-account");
 
     }
 
