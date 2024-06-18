@@ -16,7 +16,7 @@ public class LoginPageSteps {
     @Given("User is on Login Page")
     public void user_is_on_login_page() {
 
-        DriverFactories.get_driver().get("http://www.automationpractice.pl/index.php?controller=authentication&back=my-account");
+c        DriverFactories.get_driver().get("http://www.automationpractice.pl/index.php?controller=authentication&back=my-account");
 
     }
 
